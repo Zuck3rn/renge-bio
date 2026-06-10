@@ -1,0 +1,161 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgb(115, 186, 159),rgb(174, 181, 138));
+    background-repeat: repeat-x;
+    height: 100dvh;
+    overflow: hidden;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bg-right {
+    position: absolute; 
+    right: 0px; 
+    bottom: 0px;
+}
+
+.bg-left {
+    position: absolute; 
+    left: 0px; 
+    top: 0px;
+}
+
+.float-right {
+    float: right;
+    margin-right: 20px;
+}
+
+.tu-border {
+    border: 10px solid rgb(35, 141, 206);
+    border-radius: 30px;
+    outline: 5px solid rgb(21, 70, 184);
+}
+
+main {
+    height: 100%;
+    margin: 0px 15%;
+    width: auto;
+    background: rgba(255,255,255,0.5);
+    border: 5px solid white;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding: 10px;
+    padding-top: 0px;
+    overflow-y: scroll;
+    scroll-margin-bottom: 10px;
+    height: 100%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+main button {
+    background: white;
+    border-radius: 10px;
+    border: transparent;
+    padding: 5px 10px;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-width: 5px 3px 15px 3px;
+    background-clip: padding-box;
+    border-radius: 100000px;
+    background-color: white;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgba(0,0,0, 0.3);
+    border-radius: 3px;
+}
+
+.dropdown {
+    width: max-content;
+    margin-right: auto;
+}
+
+.dropdown button {
+    aspect-ratio: 1;
+    border: none;
+    background-color: white;
+}
+
+.dropdown:hover button {
+    background-color: rgb(227, 227, 227);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.dropdown ul{
+    display: none;
+    background-color: white;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    list-style-type: none;
+}
+
+.dropdown ul li{
+    padding: 10px 50px;
+    padding-left: 10px;
+    color: black;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    font-size: larger;
+}
+
+.dropdown ul li:not(:last-child) {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover ul{
+    display: block;
+}
+
+.dropdown ul.visible {
+    display: block;
+}
+
+.dropdown ul li:hover a {
+    color: gray;
+}
+
+body > img {
+    max-height: 100%;
+}
+
+footer {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
